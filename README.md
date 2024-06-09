@@ -1,1 +1,1 @@
-# Snakes-game
+In the game Snake, the player controls a snake-like block or head that moves left or right in 90 degree turns to eat food and grow in size. The goal is to make the snake as large as possible before it hits itself or the edge of the screen, and the player earns points for each piece of food the snake eats.
