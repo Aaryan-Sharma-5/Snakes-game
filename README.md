@@ -2,7 +2,7 @@
 
 Welcome to the Snake Game — a modern, responsive twist on the timeless arcade classic. Built using HTML, CSS, and JavaScript, this game combines sleek visuals with engaging gameplay across devices!
 
-![Snake Game Screenshot](img\Snake-Game.png)
+![Snake Game Screenshot](img/Snake-Game.png)
 
 ---
 
