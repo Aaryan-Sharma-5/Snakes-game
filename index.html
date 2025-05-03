@@ -1,21 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snakes</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Snakes Game</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
-    <div class="body">
-        <h1>Snake</h1>
-        <div id="scores">
-        <div id="scoreBox">Score : 0</div>
-        <div id="hiscoreBox">HiScore : 0</div>
-        </div>
-        <canvas id="board"></canvas>
-    </div>
-    <script src="js/index.js"></script>
-</body>
-</html>
 
+<body>
+    <div class="container">
+        <h1 class="game-title">SNAKE GAME</h1>
+
+        <div class="score-container">
+            <div id="scoreBox">Score: 0</div>
+            <div id="hiscoreBox">HiScore: 0</div>
+            <div id="timerBox">Time: 0s</div>
+        </div>
+
+        <canvas id="board"></canvas>
+
+        <div class="button-container">
+            <button id="startBtn" class="game-button">Start Game</button>
+            <button id="pauseBtn" class="game-button" disabled>Pause</button>
+            <button id="infoBtn" class="game-button info-button"></button>
+        </div>
+
+        <div class="touch-controls">
+            <button class="dir-btn" id="upBtn">⬆️</button>
+            <div class="horizontal-controls">
+                <button class="dir-btn" id="leftBtn">⬅️</button>
+                <button class="dir-btn" id="downBtn">⬇️</button>
+                <button class="dir-btn" id="rightBtn">➡️</button>
+            </div>
+        </div>
+
+        <div id="infoOverlay" class="overlay">
+            <div class="overlay-content">
+                <h2>How to Play</h2>
+                <p>Use arrow keys or touch controls to move the snake.</p>
+                <p>Eat food to grow longer and earn points.</p>
+                <p>Avoid hitting walls or your own tail!</p>
+                <button id="closeInfoBtn" class="game-button">Got it!</button>
+            </div>
+        </div>
+
+        <div id="startOverlay" class="overlay active">
+            <div class="overlay-content">
+                <h2>SNAKE GAME</h2>
+                <p class="tagline">Classic arcade action!</p>
+                <button id="startGameBtn" class="game-button btn-glow">PLAY NOW</button>
+            </div>
+        </div>
+
+        <div id="gameOverOverlay" class="overlay">
+            <div class="overlay-content">
+                <h2>GAME OVER</h2>
+                <p id="finalScore">Score: 0</p>
+                <p id="newHighScore" class="high-score-text">New High Score!</p>
+                <button id="restartGameBtn" class="game-button btn-glow">Play Again</button>
+            </div>
+        </div>
+
+        <div id="settingsOverlay" class="overlay">
+            <div class="overlay-content">
+                <h2>Settings</h2>
+
+                <div class="settings-group">
+                    <label for="difficultySelect">Difficulty:</label>
+                    <select id="difficultySelect" class="settings-select">
+                        <option value="easy">Easy</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+
+                <div class="settings-group">
+                    <label>Sound Effects:</label>
+                    <label class="switch">
+                        <input type="checkbox" id="soundToggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <button id="closeSettingsBtn" class="game-button">Save</button>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/script.js"></script>
+</body>
+
+</html>
