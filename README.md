@@ -1,29 +1,122 @@
-Objective: The primary goal is to control the snake, guiding it to eat food items that appear randomly on the board. Each time the snake eats food, it grows longer. The game continues until the snake collides with the walls or itself.
-Controls: Use the arrow keys on your keyboard to change the direction of the snake:
-  Arrow Up: Move up
-  Arrow Down: Move down
-  Arrow Left: Move left
-  Arrow Right: Move right
-Scoring: Each piece of food consumed increases the player's score by one point. The score is displayed on the screen along with the highest score achieved in previous sessions, which is stored locally on your device.
-Sound Effects: The game includes sound effects for different actions:
-  Eating food
-  Changing direction
-  Game over
-Game Over: The game ends if the snake collides with the walls or its own body. A "Game Over" alert is displayed when the game ends, and a "Play Again" button appears, allowing players to restart the game and try to beat their high score.
+# 🐍 Snake Game
 
-How to Play - 
-Start the Game: The game begins automatically when the page loads. The snake starts at a fixed position on the board.
-Navigate the Snake: Use the arrow keys to guide the snake towards the food.
-Eat Food: Each time the snake eats food, it grows longer, and a new piece of food appears randomly on the board.
-Avoid Collisions: Prevent the snake from hitting the walls or its body to continue playing.
-Game Over and Restart: If a collision occurs, a "Game Over" message will be displayed along with a "Play Again" button. Click the button to reset the game and start a new round.
+Welcome to the Snake Game — a modern, responsive twist on the timeless arcade classic. Built using HTML, CSS, and JavaScript, this game combines sleek visuals with engaging gameplay across devices!
 
-Technical Details -
-Dynamic Gameplay: The game board updates in real-time, and the snake moves continuously, requiring quick reflexes and strategic planning.
-High Score Tracking: The highest score is saved and displayed, motivating players to improve their performance.
-Sound Integration: Enhances the gaming experience with sound effects corresponding to different in-game actions.
-Responsive Controls: Smooth and responsive controls ensure a seamless gaming experience.
-Language: JavaScript for game logic, HTML5 for structure, and CSS for styling.
-Canvas API: Utilizes the HTML5 Canvas API to render the game board and elements.
-LocalStorage: Uses the browser's LocalStorage to save and retrieve the high score.
-Audio: Incorporates audio files to play sound effects during the game.
+![Snake Game Screenshot](img\Snake-Game.png)
+
+---
+
+## 🎮 Game Overview
+
+Control a snake as it moves around the board, eating food to grow longer and earn points. The game continues until the snake collides with the walls or itself, challenging your reflexes and strategic planning.
+
+---
+
+## ✨ Features
+
+- **Multiple Game Modes:**
+  - 🎯 **Classic**: Traditional gameplay with wraparound walls.
+  - ⏱️ **Timed**: Race against a 60-second timer to earn the highest score.
+  - 🧱 **Walls**: Navigate through randomly generated obstacles.
+
+- **Power-Ups:**
+  - 🚀 **Speed Boost:** Temporarily increases snake movement speed
+  - 🐌 **Slow Motion:** Temporarily decreases snake movement speed
+  - 💎 **Double Points:** Score twice as many points for each food item
+
+- **Visual & UX Enhancements**
+  - Glowing food and snake animations
+  - Particle effects on food collection
+  - Responsive layout and modern neon UI
+  - Smooth transitions and game state changes
+
+- **Gameplay Add-ons**
+  - 🎮 Touch & Keyboard Support (Mobile/Desktop)
+  - 🧠 Difficulty Selection (Easy, Medium, Hard)
+  - 🔊 Sound Effects Toggle
+  - 🏆 Local High Score Tracking
+  - ⏱️ Timer Display
+  - ⏸️ Pause/Resume Functionality
+
+---
+
+## 🎯 How to Play
+
+###  🔧 Controls
+
+- **Keyboard:**
+  - Arrow Keys / WASD: Move the snake
+  - P or ESC: Pause/Resume
+  
+- **Mobile**
+  - On-screen arrow buttons
+
+### Gameplay Instructions
+
+1. **Starting the Game:**
+   - Click "PLAY NOW" on the start screen
+   - Select your preferred game mode
+
+2. **Game Mechanics:**
+   - Eat food to grow longer and score points
+   - Collect power-up food items for special effects
+   - The Snake gets faster every 50 points
+
+3. **Game Over Conditions:**
+   - Classic/Walls Mode: Collision with wall or self
+   - Timed Mode: When the 60-second timer expires
+   - A "Game Over" screen will show your final score
+
+---
+
+## ⚙️ Settings
+
+Click the ⚙️ icon to open the settings panel:
+
+- **Difficulty**: Easy / Medium / Hard
+- **Sound**: Toggle game SFX on or off
+
+---
+
+## 💡 Tips & Strategies
+
+- Plan ahead and avoid tight corners
+- In Walls mode, memorize safe paths early
+- Use power-ups wisely during rushes
+- In Timed mode, go for food quickly, not just safety
+- Avoid crowding your tail in one area
+- For the best experience, play on a device with keyboard controls.
+
+---
+
+## 🔧 Technical Details
+
+- Built with **Vanilla JS**, **HTML5**, and **CSS3**
+- Canvas API used for rendering the game
+- Fully **responsive** for mobile and desktop
+- Uses **modern CSS** animations and UI effects
+
+## 📦 Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Aaryan-Sharma-5/Snakes-game.git
+   cd Snakes-game
+
+2. **Run Locally**
+   Open index.html in your browser Or host using Live Server (VSCode extension recommended).
+
+## 🚀 Future Enhancements
+
+- 🧑‍🤝‍🧑 Multiplayer Mode
+- 🧩 New Power-Ups and Obstacles
+- 🔁 Add new gameplay modes (infinite, survival).
+- 🎨 Theme Customization (Dark, Neon, Retro)
+- 📈 Level Progression System
+- 🌐 Global Leaderboards
+
+---
+
+Enjoy the game and see if you can beat your high score! 🏆
+
+Made by Aaryan
